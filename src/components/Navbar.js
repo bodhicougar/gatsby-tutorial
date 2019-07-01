@@ -1,12 +1,14 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import styles from '../components/navbar.module.scss'
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className={styles.navbar}>
+      <h2>Company</h2>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/">Start</Link>
         </li>
         <li>
           <Link to="/blog/">Blog</Link>
