@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import styles from '../components/navbar.module.scss'
+// import styles from '../components/navbar.module.scss'
 
 const Navbar = () => {
   return (
-    <nav className={styles.navbar}>
+    <nav>
       <h2>Company</h2>
       <ul>
         <li>
@@ -17,8 +17,8 @@ const Navbar = () => {
           <Link to="/products/">Products</Link>
         </li>
       </ul>
-    </nav>
-  )
+      </nav>
+      )
 }
 
 export default Navbar
