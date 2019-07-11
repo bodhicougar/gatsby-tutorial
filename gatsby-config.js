@@ -7,9 +7,9 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: 'tutorial',
-    description: 'gatsby tutorial via udemy',
+    description: 'Gatsby tutorial via udemy',
     author: '@bodhicougar',
-    data: ['item1', 'item2'],
+    data: { name: 'walter', age: 54 },
   },
   plugins: [`gatsby-plugin-sass`, `gatsby-plugin-styled-components`],
 }
