@@ -6,7 +6,7 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    titel: 'tutorial',
+    title: 'tutorial',
     description: 'gatsby tutorial via udemy',
     author: '@bodhicougar',
     data: ['item1', 'item2'],
