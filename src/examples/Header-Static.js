@@ -1,7 +1,33 @@
 import React from 'react'
+import { graphql, StaticQuery } from 'gatsby'
+
+const getSData = graphql`
+  query SecondQuery {
+    site {
+      siteMetadata {
+        description
+        author
+        title
+        data
+      }
+    }
+  }
+`
 
 const HeaderStatic = () => {
-  return <div>Hey I'm using a static query</div>
+  return (
+    <StaticQuery>
+      query={getSData} render=
+      {data => {
+        console.log(data)
+        return (
+          <div>
+            <h1>{data.site.siteMetadata.description}</h1>
+          </div>
+        )
+      }}
+    </StaticQuery>
+  )
 }
 
 export default HeaderStatic
