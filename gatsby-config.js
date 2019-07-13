@@ -7,9 +7,17 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: 'tutorial',
-    description: 'Gatsby tutorial via udemy',
+    description: 'Gatsby Tutorial via Udemy',
     author: '@bodhicougar',
-    data: { name: 'walter', age: 54 },
+    data: { name: 'Walter', age: 54 },
   },
-  plugins: [`gatsby-plugin-sass`, `gatsby-plugin-styled-components`],
+  plugins: [
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      name: `images`,
+      path: `${__dirname}/src/images/`,
+    },
+  },
+  `gatsby-plugin-sass`, `gatsby-plugin-styled-components`],
 }
