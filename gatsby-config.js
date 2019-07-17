@@ -9,15 +9,26 @@ module.exports = {
     title: 'tutorial',
     description: 'Gatsby Tutorial via Udemy',
     author: '@bodhicougar',
-    data: { name: 'Walter', age: 54 },
+    data: { name: 'Walter', age: 55 },
   },
   plugins: [
-  {
-    resolve: `gatsby-source-filesystem`,
-    options: {
-      name: `images`,
-      path: `${__dirname}/src/images/`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+      },
     },
-  },
-  `gatsby-plugin-sass`, `gatsby-plugin-styled-components`],
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `${__dirname}/src/posts/`,
+      },
+    },
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+  ],
 }
