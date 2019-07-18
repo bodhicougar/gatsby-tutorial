@@ -9,7 +9,7 @@ module.exports = {
     title: 'tutorial',
     description: 'Gatsby Tutorial via Udemy',
     author: '@bodhicougar',
-    data: { name: 'Walter', age: 55 },
+    data: { name: 'Walter', age: 55, },
   },
   plugins: [
     {
