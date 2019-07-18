@@ -1,10 +1,18 @@
 import React from 'react'
 import SingleTour from '../Tours/SingleTour'
+import styles from '../../css/items.module.css'
 
-const Tours = () => {
-  return <div>This is Tours component.
-      <SingleTour />
-  </div>
+const Tours = ({tours}) => {
+    console.log(tours)
+
+  return <section className={styles.tours}>
+      <h2>Our tours</h2>
+      <div className={styles.center}>
+          {tours.map(({node})=> {
+return <SingleTour key={node.id} tour={node} />
+          } ) }
+      </div>
+  </section>
 }
 
 export default Tours
