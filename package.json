@@ -37,6 +37,8 @@
     "typescript": "^3.5.2"
   },
   "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-plugin-react": "^7.14.3",
     "prettier": "^1.18.2"
   },
   "repository": {
