@@ -53,7 +53,7 @@ const TourTemplate = ({ data }) => {
               return <li key={index}>{item.day}</li>
             })}
           </ul> */}
-          <Link to="/tours">back to tours</Link>
+          <Link to="/tours">Back to tours overview</Link>
         </div>
       </section>
     </Layout>
