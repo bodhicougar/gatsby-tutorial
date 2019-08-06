@@ -1,12 +1,12 @@
 import React from 'react'
 import Layout from '../components/layout'
-import {Button} from '../components/button'
+import { Button } from '../components/button'
 
 export default () => (
   <Layout>
-    <h1 className="title">This is our homepage</h1>
-    Hello world! Griaß enk Leitln! I bins, da Hansi!
-    <h2>Another heading.</h2>
-    <Button>styled button</Button>
+    <h1 className="title">Das ist der erste Gatsby Tutorial Test!</h1>
+    ZEIT Now Integration platform added. Cool!
+    <h2>Template - Schablone erstellt: JSX produziert die Detailseiten!</h2>
+    <Button>Styled button</Button>
   </Layout>
 )
