@@ -1,9 +1,8 @@
 {
-  "name": "Tutorial Gatsby - First step",
-  "private": true,
-  "description": "Udemy Gatsby Tutorial",
-  "version": "0.1.0",
-  "license": "MIT",
+  "name": "tutorial",
+  "version": "1.0.0",
+  "description": "Udemy Gatsby Tutorial first part",
+  "main": "gatsby-config.js",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -49,9 +48,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/blackboxmd/gatsby-tutorial"
+    "url": "git+https://github.com/blackboxmd/gatsby-tutorial.git"
   },
+  "keywords": [
+    "Gatsby",
+    "Netlify",
+    "Contentful",
+    "Udemy"
+  ],
+  "author": "bodhicougar",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
+    "url": "https://github.com/blackboxmd/gatsby-tutorial/issues"
+  },
+  "homepage": "https://github.com/blackboxmd/gatsby-tutorial"
 }
