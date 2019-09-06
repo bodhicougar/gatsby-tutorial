@@ -21,12 +21,12 @@ const getImages = graphql`
       }
     }
     example: file(relativePath: { eq: "image-2.jpeg" }) {
-        childImageSharp {
-          fluid(maxWidth:200) {
-            ...GatsbyImageSharpFluid_tracedSVG
-          }
+      childImageSharp {
+        fluid(maxWidth: 200) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
+    }
   }
 `
 
@@ -67,7 +67,7 @@ const Wrapper = styled.section`
     width: 100%;
   }
   .small {
-      width: 200px;
+    width: 200px;
   }
   article {
     border: 3px solid red;

@@ -2,19 +2,19 @@ import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
 const getHData = graphql`
-query FirstQuery {
-  site {
-    siteMetadata {
-      description
-      author
-      title
-      data {
-        age
-        name
+  query FirstQuery {
+    site {
+      siteMetadata {
+        description
+        author
+        title
+        data {
+          age
+          name
+        }
       }
     }
   }
-}
 `
 
 const HeaderHook = () => {

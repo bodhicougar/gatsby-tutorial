@@ -1,18 +1,18 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 const getData = graphql`
-query BasicQuery {
-  site {
-    siteMetadata {
-      description
-      author
-      title
-      data {
-        age
+  query BasicQuery {
+    site {
+      siteMetadata {
+        description
+        author
+        title
+        data {
+          age
+        }
       }
     }
   }
-}
 `
 
 const Header = () => {

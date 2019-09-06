@@ -26,8 +26,8 @@ const Navbar = () => {
           <Link to="/tours/">Tours</Link>
         </li>
       </ul>
-      </nav>
-      )
+    </nav>
+  )
 }
 
 export default Navbar

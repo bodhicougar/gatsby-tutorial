@@ -2,26 +2,26 @@ import React from 'react'
 import { graphql, StaticQuery } from 'gatsby'
 
 const getSData = graphql`
-query SecondQuery {
-  site {
-    siteMetadata {
-      description
-      author
-      title
-      data {
-        age
-        name
+  query SecondQuery {
+    site {
+      siteMetadata {
+        description
+        author
+        title
+        data {
+          age
+          name
+        }
       }
     }
   }
-}
 `
 
 const HeaderStatic = () => {
   return (
     <StaticQuery
-      query={getSData} render=
-      {data => {
+      query={getSData}
+      render={(data) => {
         console.log(data)
         return (
           <div>
@@ -29,8 +29,7 @@ const HeaderStatic = () => {
           </div>
         )
       }}
-      >
-    </StaticQuery>
+    ></StaticQuery>
   )
 }
 
